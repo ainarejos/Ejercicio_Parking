@@ -78,7 +78,7 @@ public class Praking {
                     posciciones.put(plaza, matricula);
                     System.out.println("El coche ha apacado en la placa: " + plaza);
                     if (plaza >= 0 && plaza < getPlaces_discapacitat()) {
-                        System.out.println("Garrulo detected!!! Ha aparcat a la plaça: " + plaza);
+                        throw new  Exception("Garrulo detected!!! Ha aparcat a la plaça: " + plaza);
                     }
                 }
             } while ((disponibilidad(contenedor)==false)&&(Lleno())) ;
